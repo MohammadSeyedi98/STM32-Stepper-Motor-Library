@@ -4,6 +4,7 @@ A lightweight non-blocking stepper motor driver library for STM32 using HAL time
 
 ## Features
 
+- programmable on STM32 Micro Controlers
 - Non-blocking motor control
 - PWM-based STEP generation
 - Continuous rotation
