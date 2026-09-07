@@ -15,9 +15,9 @@ A lightweight non-blocking stepper motor driver library for STM32 using HAL time
 
 ## Folder Structure
 
-include/
-src/
-eww/
+```c
+include/ src/ eww
+```
 
 ## Supported Drivers
 
@@ -27,8 +27,15 @@ eww/
 
 ## Example
 
+```c
+Stepper_t motor;
+
 Stepper_Init(...);
-Stepper_Enable(...);
-Stepper_SetDirection(...);
-Stepper_MoveSteps(...);
+
+Stepper_Enable(&motor);
+
+Stepper_SetDirection(&motor, DIR_CW);
+
+Stepper_MoveSteps(&motor, 3200, 1000);
+```
 
